@@ -88,7 +88,7 @@ To act as a primer to technical professionals involved with managing personal da
 
 IETF standards already address privacy in Internet communications, including the principle of data minimization [RFC 7258]. However, those standards generally do not address consumer data privacy vis-à-vis organizations that collect, process, and disclose consumer data.
 
-## **Privacy and vCon – In General**
+## Privacy and vCon – In General
 
 Privacy in general can be understood as “the right to be let alone” [Warren, S. D., & Brandeis, L. D. (1890). The Right to Privacy. Harvard Law Review, 4(5), 193-220]. It may be helpful to think of it in four aspects:
 
