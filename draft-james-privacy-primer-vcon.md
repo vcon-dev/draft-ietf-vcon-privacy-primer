@@ -49,7 +49,7 @@ author:
     organization: Marashlian & Donahue, PLLC
     email: daj@commlawgroup.com
 
- - 
+ -
     fullname: Thomas McCarthy-Howe
     organization: Strolid
     email: thomas.howe@strolid.com
