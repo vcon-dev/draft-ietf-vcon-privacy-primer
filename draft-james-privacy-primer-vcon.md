@@ -48,34 +48,32 @@ This document serves as a primer for technical professionals involved in managin
 
 # Introduction
 
-1. Introduction
-
 The democratization of technology has led to a surge of new entrants in the growing market of personal data management. These entrants, driven by various motives ranging from commerce and regulation to fraud prevention and charitable causes, are increasingly engaging with conversational data across network boundaries. The vCon (Virtual Conversation) represents a significant step forward in this landscape, enabling the ethical sharing of conversational data and fostering a rich ecosystem of services based on a novel concept: genuinely listening to what customers say.
 
 However, many of these new entrants may not inherently understand the ethical and legal complexities surrounding crucial topics such as data minimization, redaction, the right to know, and the right to erasure. The design decisions behind the vCon framework directly address these concerns, incorporating features such as encryption capabilities, external data signing for change detection, and the creation of redacted versions that maintain a trail to the original data.
 
-1.1. Purpose of this Document
+## Purpose of this Document
 
 This document serves as a primer for individuals and organizations grappling with the challenges of responsible personal data management in the digital age. It aims to provide a foundational understanding of key topics, explaining their importance and how they are addressed (or not) within the vCon framework. While the vCon is not a panacea, it offers a structure that enables well-intentioned actors to operate ethically and responsibly. Much like the distinction between HTTP and HTTPS, where HTTPS is trusted by default and HTTP is not, the vCon framework provides a basis for trust, with legal systems managing those who operate outside its principles.
 
-1.2. Intended Audience
+## Intended Audience
 
 This primer is designed to cater to three primary constituencies often present in IETF discussions:
 
-1. Technologists and Engineers: Often immersed in technical details, these professionals may benefit from understanding the broader ethical and legal considerations that should inform their designs. This document aims to bridge the gap between technical implementation and important "non-technical" issues they need to consider.
+- Technologists and Engineers: Often immersed in technical details, these professionals may benefit from understanding the broader ethical and legal considerations that should inform their designs. This document aims to bridge the gap between technical implementation and important "non-technical" issues they need to consider.
 
-2. Regulators, Lawyers, and Government Representatives: Responsible for tech policy, these individuals often approach discussions with the perspectives of their constituencies but are generally open to education. This document seeks to provide them with a clearer understanding of how their legal concerns are addressed within the vCon framework and what aspects fall outside its scope.
+- Regulators, Lawyers, and Government Representatives: Responsible for tech policy, these individuals often approach discussions with the perspectives of their constituencies but are generally open to education. This document seeks to provide them with a clearer understanding of how their legal concerns are addressed within the vCon framework and what aspects fall outside its scope.
 
-3. Non-Governmental Organizations (NGOs): Particularly those focused on privacy, security, and human rights, these organizations represent the intersection of policy and technology. Often skeptical of commercial and government interests, this audience will find information on how the vCon supports personal data privacy, transparency, and control.
+- Non-Governmental Organizations (NGOs): Particularly those focused on privacy, security, and human rights, these organizations represent the intersection of policy and technology. Often skeptical of commercial and government interests, this audience will find information on how the vCon supports personal data privacy, transparency, and control.
 
-1.3. Goals of this Document
+## Goals of this Document
 
 The primary objectives of this primer are:
 
-1. To educate an expanding audience on the fundamental concepts of responsible customer data management.
-2. To foster a common understanding of the challenges involved in personal data handling.
-3. To provide an informed perspective on what is currently addressed by the vCon framework and what remains outside its scope.
-4. To encourage thoughtful consideration of ethical and legal issues in the design and implementation of systems handling personal data.
+- To educate an expanding audience on the fundamental concepts of responsible customer data management.
+- To foster a common understanding of the challenges involved in personal data handling.
+- To provide an informed perspective on what is currently addressed by the vCon framework and what remains outside its scope.
+- To encourage thoughtful consideration of ethical and legal issues in the design and implementation of systems handling personal data.
 
 By achieving these goals, we aim to contribute to a more informed and responsible approach to personal data management across various sectors and disciplines.
 
@@ -101,7 +99,7 @@ Privacy in general can be understood as “the right to be let alone” [Warren,
 
 In the context of vCon, we will concentrate on **data privacy** and **communications privacy.**
 
-## **Data privacy**
+## Data privacy
 
 Data privacy, also known as information privacy or data protection, refers to the practice of safeguarding individuals' personal information from unauthorized access, use, disclosure, alteration, or destruction. It involves ensuring that individuals have control over their own personal data and that organizations that collect, store, and process personal data do so in a manner that respects individuals' privacy rights.
 
@@ -109,7 +107,7 @@ Data privacy laws and regulations vary by jurisdiction, but many countries and r
 
 This document outlines common privacy rights and obligations in alignment with fair information practices (FIP), which are widely recognized principles but may or may not be legally required, depending on the jurisdiction. The framework presented here offers a general understanding of data privacy principles but does not guarantee legal compliance in any specific region. Readers are encouraged to seek legal advice for their particular situations.
 
-### **Key Roles in Data Processing**
+### Key Roles in Data Processing
 
 The following terms are used by the GDPR and in the privacy industry in general to define the three key roles in data processing:
 
@@ -119,7 +117,7 @@ The following terms are used by the GDPR and in the privacy industry in general 
 
 The relationship between these entities forms a hierarchy of responsibility and trust. The data controller sets the parameters for data use, while processors at various levels must operate within these boundaries. This structure ensures accountability and helps maintain data privacy throughout the information processing chain.
 
-### **What Rights in Their Data do Consumers Have?**
+### What Rights in Their Data do Consumers Have?
 
 Regarding individual rights in data privacy, organizations should focus on six key areas:
 
@@ -138,7 +136,7 @@ Regarding individual rights in data privacy, organizations should focus on six k
 
 By addressing these areas, organizations can respect individual privacy rights and build trust with their customers or users. This approach aligns with many modern data protection regulations and best practices in privacy management.
 
-### **What Data Is Protected?**
+### What Data Is Protected?
 
 Data privacy laws protect personal information, though its scope can vary across different laws. In general, the term “personal information” (also known as “personally identifiable information” or “PII”) includes information that makes it possible to identify an individual or information about an “identified” or “identifiable” individual. California extends the scope of PII to include information about a consumer and the consumer’s household, as well as employment data. Examples of PII include:
 
@@ -172,7 +170,7 @@ An important subset of PII to consider in designing data privacy practices is so
 - **Online activity -** information revealing an individual's online activities over time and across websites or online services that do not share common branding or over time on any website or online service operated by a covered high-impact social media company.
 - Information about minors (17 years of age or younger).
 
-### **What Data Isn’t Protected?**
+### What Data Isn’t Protected?
 
 The distinction between personal and nonpersonal information hinges on identifiability. This boundary can be ambiguous, with varying interpretations across jurisdictions. For instance, IP addresses are considered personal information by the EU and FTC, but not by U.S. federal agencies under the Privacy Act.
 
@@ -182,7 +180,7 @@ When identifying elements are removed from data, it becomes nonpersonal informat
 
 Many jurisdictions remove **publicly available information** from the scope of protected PI.
 
-### **Aggregation/Anonymization**
+### Aggregation/Anonymization
 
 Data aggregation and anonymization are important techniques used in the context of data privacy to protect individuals' personal information while still allowing organizations to derive valuable insights. However, these methods are not without risks and limitations.
 
@@ -208,7 +206,7 @@ To mitigate these risks, organizations should consider:
 
 While data aggregation and anonymization can enhance privacy protection, they should not be viewed as foolproof solutions. Organizations must remain vigilant and adopt a comprehensive approach to data privacy that considers the evolving nature of re-identification risks and the potential for unintended consequences when working with large datasets.
 
-## **Communications Privacy**
+## Communications Privacy
 
 Communications privacy is a critical concern in our increasingly interconnected world, where various forms of communication – including audio, video, text messages, and emails – have become integral to both personal and professional interactions. Under the applicable laws, communications are protected when in transit and when stored.
 
@@ -225,7 +223,7 @@ Understanding the multifaceted legal and ethical frameworks around communication
 
 Understanding these common provisions is crucial for compliance with communications privacy laws, regardless of the specific jurisdiction. However, it is important to note that the exact implementation and interpretation of these provisions can vary significantly between different legal frameworks.
 
-### **Key Privacy Principles**
+### Key Privacy Principles
 
 Data privacy and communications privacy are guided by similar principles, emphasizing consent, transparency, and data minimization while balancing privacy rights with societal interests. These areas aim to safeguard individuals' control over their personal information, whether stored or transmitted. Key principles include:
 
@@ -294,7 +292,7 @@ By addressing these security concerns and following the guidelines in the vCon s
 
 This document has no IANA actions.
 
-## **Informative References**
+## Informative References
 
 [RFC6973]   Cooper, A., Tschofenig, H., Aboba, B., Peterson, J.,
             Morris, J., Hansen, M., and R. Smith, "Privacy
