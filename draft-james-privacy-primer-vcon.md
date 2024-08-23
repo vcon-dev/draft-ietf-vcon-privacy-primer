@@ -48,7 +48,36 @@ This document serves as a primer for technical professionals involved in managin
 
 # Introduction
 
-TODO Introduction
+1. Introduction
+
+The democratization of technology has led to a surge of new entrants in the growing market of personal data management. These entrants, driven by various motives ranging from commerce and regulation to fraud prevention and charitable causes, are increasingly engaging with conversational data across network boundaries. The vCon (Virtual Conversation) represents a significant step forward in this landscape, enabling the ethical sharing of conversational data and fostering a rich ecosystem of services based on a novel concept: genuinely listening to what customers say.
+
+However, many of these new entrants may not inherently understand the ethical and legal complexities surrounding crucial topics such as data minimization, redaction, the right to know, and the right to erasure. The design decisions behind the vCon framework directly address these concerns, incorporating features such as encryption capabilities, external data signing for change detection, and the creation of redacted versions that maintain a trail to the original data.
+
+1.1. Purpose of this Document
+
+This document serves as a primer for individuals and organizations grappling with the challenges of responsible personal data management in the digital age. It aims to provide a foundational understanding of key topics, explaining their importance and how they are addressed (or not) within the vCon framework. While the vCon is not a panacea, it offers a structure that enables well-intentioned actors to operate ethically and responsibly. Much like the distinction between HTTP and HTTPS, where HTTPS is trusted by default and HTTP is not, the vCon framework provides a basis for trust, with legal systems managing those who operate outside its principles.
+
+1.2. Intended Audience
+
+This primer is designed to cater to three primary constituencies often present in IETF discussions:
+
+1. Technologists and Engineers: Often immersed in technical details, these professionals may benefit from understanding the broader ethical and legal considerations that should inform their designs. This document aims to bridge the gap between technical implementation and important "non-technical" issues they need to consider.
+
+2. Regulators, Lawyers, and Government Representatives: Responsible for tech policy, these individuals often approach discussions with the perspectives of their constituencies but are generally open to education. This document seeks to provide them with a clearer understanding of how their legal concerns are addressed within the vCon framework and what aspects fall outside its scope.
+
+3. Non-Governmental Organizations (NGOs): Particularly those focused on privacy, security, and human rights, these organizations represent the intersection of policy and technology. Often skeptical of commercial and government interests, this audience will find information on how the vCon supports personal data privacy, transparency, and control.
+
+1.3. Goals of this Document
+
+The primary objectives of this primer are:
+
+1. To educate an expanding audience on the fundamental concepts of responsible customer data management.
+2. To foster a common understanding of the challenges involved in personal data handling.
+3. To provide an informed perspective on what is currently addressed by the vCon framework and what remains outside its scope.
+4. To encourage thoughtful consideration of ethical and legal issues in the design and implementation of systems handling personal data.
+
+By achieving these goals, we aim to contribute to a more informed and responsible approach to personal data management across various sectors and disciplines.
 
 
 # Conventions and Definitions
