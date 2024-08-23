@@ -217,8 +217,49 @@ As the digital landscape evolves, privacy laws must continually adapt to address
 
 # Security Considerations
 
-TODO Security
+vCons contain sensitive conversational data, which raises several security concerns, particularly regarding data integrity and personal privacy. The following points outline the key security considerations for vCons:
 
+1. Data Integrity and Immutability
+   - vCons need to be protected against unauthorized modifications to ensure the authenticity of the conversational data.
+   - Before a vCon leaves its original security domain, it should be digitally signed to prevent alteration, as specified in Section 5.2 (Signed Form of vCon Object).
+
+2. Privacy Protection
+   - vCons often contain personally identifiable information (PII) and sensitive data that must be safeguarded.
+   - Different levels of redaction may be necessary, as outlined in Section 4.1.6 (redacted):
+     a) PII masking: Removing PII from text, audio, video, and transcripts
+     b) De-identification: Removing segments or whole recordings to prevent voice printing or facial recognition
+
+3. Encrypted Storage and Transmission
+   - Unredacted versions of vCons must be encrypted to protect sensitive information, as described in Section 5.3 (Encrypted Form of vCon Object).
+   - vCons transmitted over non-secure channels (e.g., email) must always be in encrypted form.
+
+4. Access Control
+   - Externally referenced files should be transported only over HTTPS, as specified in Section 2.4 (Externally Referenced Files).
+   - Access to unredacted vCons and their referenced files should be restricted to authorized personnel only.
+
+5. Version Management
+   - Multiple versions of a vCon may exist (e.g., redacted versions, versions with added analysis).
+   - Each version must maintain its own integrity while providing a secure reference to its predecessor, as described in Sections 4.1.6 (redacted) and 4.1.7 (appended).
+
+6. Cross-Domain Security
+   - vCons may be created and modified across different security domains, as discussed in Section 4 (Unsigned Form of vCon Object).
+   - Each domain should sign the vCon before transferring it to maintain the chain of trust, using the method in Section 5.2 (Signed Form of vCon Object).
+
+7. Redaction Processes
+   - While methods exist for redacting text, audio, and video, the specific techniques are beyond the scope of the vCon standard, as noted in Section 4.1.6 (redacted).
+   - Implementers must ensure that redaction methods effectively remove sensitive information without compromising the vCon's integrity.
+
+8. Balancing Utility and Privacy
+   - There's an inherent tension between maintaining the usefulness of vCons and protecting privacy, as implied throughout Section 4 (Unsigned Form of vCon Object).
+   - Careful consideration is needed when deciding what information to redact or encrypt.
+
+9. Encryption of Referenced Content
+   - Externally referenced files that are part of a vCon should be encrypted if they contain sensitive information, as suggested in Section 2.4 (Externally Referenced Files).
+
+10. Audit Trail
+    - vCons should maintain a secure audit trail of modifications, especially for redactions and additions, to ensure accountability. This is supported by the structure described in Sections 4.1.6 (redacted) and 4.1.7 (appended).
+
+By addressing these security concerns and following the guidelines in the vCon standard, implementers can help ensure that vCons protect the privacy of individuals involved in conversations while maintaining the integrity and utility of the conversational data.
 
 # IANA Considerations
 
