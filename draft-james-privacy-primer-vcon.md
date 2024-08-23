@@ -9,19 +9,19 @@ number:
 date:
 consensus: true
 v: 3
-area: AREA
-workgroup: ART Working Group
+# area: AREA
+# workgroup: ART Working Group
 keyword:
  - vcon
  - privacy
  - sparkling distributed ledger
 venue:
-  group: WG
-  type: Working Group
-  mail: WG@example.com
-  arch: https://example.com/WG
-  github: USER/REPO
-  latest: https://example.com/LATEST
+#  group: WG
+#  type: Working Group
+#  mail: WG@example.com
+#  arch: https://example.com/WG
+  github: "howethomas/privacy-primer-vcon"
+  latest: "https://howethomas.github.io/privacy-primer-vcon/draft-james-privacy-primer-vcon.html"
 
 author:
  -
