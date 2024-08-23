@@ -53,7 +53,7 @@ author:
     fullname: Thomas McCarthy-Howe
     organization: Strolid
     email: thomas.howe@strolid.com
-    
+
 normative:
 
 informative:
