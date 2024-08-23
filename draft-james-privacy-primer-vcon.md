@@ -19,21 +19,21 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
+title: "Privacy Primer for vCon Developers"
+abbrev: "vcon primer"
 category: info
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-james-privacy-primer-vcon
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
 consensus: true
 v: 3
 area: AREA
-workgroup: WG Working Group
+workgroup: ART Working Group
 keyword:
- - next generation
- - unicorn
+ - vcon
+ - privacy
  - sparkling distributed ledger
 venue:
   group: WG
@@ -45,10 +45,15 @@ venue:
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: Diana James
+    organization: Marashlian & Donahue, PLLC
+    email: daj@commlawgroup.com
 
+ - 
+    fullname: Thomas McCarthy-Howe
+    organization: Strolid
+    email: thomas.howe@strolid.com
+    
 normative:
 
 informative:
