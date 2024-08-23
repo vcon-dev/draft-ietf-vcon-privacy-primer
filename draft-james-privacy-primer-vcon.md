@@ -90,7 +90,7 @@ To act as a primer to technical professionals involved with managing personal da
 
 IETF standards already address privacy in Internet communications, including the principle of data minimization [RFC 7258]. However, those standards generally do not address consumer data privacy vis-à-vis organizations that collect, process, and disclose consumer data.
 
-## **1. Privacy and vCon – In General**
+## **Privacy and vCon – In General**
 
 Privacy in general can be understood as “the right to be let alone” [Warren, S. D., & Brandeis, L. D. (1890). The Right to Privacy. Harvard Law Review, 4(5), 193-220]. It may be helpful to think of it in four aspects:
 
@@ -101,7 +101,7 @@ Privacy in general can be understood as “the right to be let alone” [Warren,
 
 In the context of vCon, we will concentrate on **data privacy** and **communications privacy.**
 
-## **2. Data privacy**
+## **Data privacy**
 
 Data privacy, also known as information privacy or data protection, refers to the practice of safeguarding individuals' personal information from unauthorized access, use, disclosure, alteration, or destruction. It involves ensuring that individuals have control over their own personal data and that organizations that collect, store, and process personal data do so in a manner that respects individuals' privacy rights.
 
@@ -208,7 +208,7 @@ To mitigate these risks, organizations should consider:
 
 While data aggregation and anonymization can enhance privacy protection, they should not be viewed as foolproof solutions. Organizations must remain vigilant and adopt a comprehensive approach to data privacy that considers the evolving nature of re-identification risks and the potential for unintended consequences when working with large datasets.
 
-## **3. Communications Privacy**
+## **Communications Privacy**
 
 Communications privacy is a critical concern in our increasingly interconnected world, where various forms of communication – including audio, video, text messages, and emails – have become integral to both personal and professional interactions. Under the applicable laws, communications are protected when in transit and when stored.
 
@@ -225,7 +225,7 @@ Understanding the multifaceted legal and ethical frameworks around communication
 
 Understanding these common provisions is crucial for compliance with communications privacy laws, regardless of the specific jurisdiction. However, it is important to note that the exact implementation and interpretation of these provisions can vary significantly between different legal frameworks.
 
-### **4. Key Privacy Principles**
+### **Key Privacy Principles**
 
 Data privacy and communications privacy are guided by similar principles, emphasizing consent, transparency, and data minimization while balancing privacy rights with societal interests. These areas aim to safeguard individuals' control over their personal information, whether stored or transmitted. Key principles include:
 
