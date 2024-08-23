@@ -23,7 +23,7 @@ title: "Privacy Primer for vCon Developers"
 abbrev: "vcon primer"
 category: info
 
-docname: draft-james-privacy-primer-vcon
+docname: draft-james-privacy-primer-vcon-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
