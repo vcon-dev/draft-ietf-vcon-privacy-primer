@@ -76,7 +76,7 @@ It aims to provide a foundational understanding of key topics, explaining their 
 While the vCon is not a panacea, it offers a structure that enables well-intentioned actors to operate ethically and responsibly.
 Much like the distinction between HTTP and HTTPS, where HTTPS is trusted by default and HTTP is not, the vCon framework provides a basis for trust, with legal systems managing those who operate outside its principles.
 IETF standards already address privacy in Internet communications, including the principle of data minimization {{RFC7258}}.
-However, those standards generally do not address the privacy of consumer data privacy vis-à-vis organizations that collect, process, and disclose consumer data¶
+However, those standards generally do not address the privacy of consumer data privacy vis-à-vis organizations that collect, process, and disclose consumer data.
 
 ## Intended Audience
 
@@ -166,9 +166,9 @@ This empowers people to ensure their data is accurate and up-to-date.
 1. **Data Choices**: In addition to rights to access and correct, data subjects often have the following data privacy rights:
     - right to have their information deleted (also referred to as the “right to be forgotten”);
     - right to port their data to a different data controller;
-    - right opt out of certain data practices, such as sale of their data, profiling, targeted/cross contextual behavioral advertising, automated decision-making.
+    - right to opt out of certain data practices, such as sale of their data, profiling, targeted/cross contextual behavioral advertising, automated decision-making.
 1. **Non-Discrimination**: Organizations must not discriminate against consumers who choose to exercise their data privacy rights.
-1. **Breach Notification**: The large amounts of data held by organizations attracts cybercriminals, increasing the risk of data breaches.
+1. **Breach Notification**: The large amounts of data held by organizations attracts cyber criminals, increases the risk of data breaches.
 To mitigate the consequences of data breaches and incentivize advanced data security practices, most jurisdictions require prompt notification of affected individuals when breaches occur (within 30 days of discovery being the industry practice in the U.S.).
 This holds organizations accountable for data security and allows individuals to take protective actions.
 
@@ -180,11 +180,12 @@ This approach aligns with many modern data protection regulations and best pract
 Data privacy laws protect personal information, though its scope can vary across different laws.
 In general, the term “personal information” (also known as “personally identifiable information” or “PII”) includes information that makes it possible to identify an individual or information about an “identified” or “identifiable” individual.
 California extends the scope of PII to include information about a consumer and the consumer’s household, as well as employment data.
+
 Examples of PII include:
 
 - Basic identifiers: Name, addresses (postal and email), government-issued identification numbers
 - Digital identifiers: IP address (in some jurisdictions like California).
-- Financial Data: financial account number or credit or debit card number, often in combination with any required security code or password that would permit access to a data subject’s financial account.
+- Financial Data: financial account number, credit or debit card number, often in combination with any required security code or password that would permit access to a data subject’s financial account.
 - Protected characteristics: Race, religion, disability, sexual orientation, national origin, etc.
 - Consumer behavior: Purchase history, product interests, consumption patterns.
 - Biometric data, including voiceprints, faceprints, fingerprints.
@@ -219,11 +220,11 @@ Communications with businesses may be awarded less protection.
 - Calendars, address book information, phone or text logs, photos, audio recordings, or videos intended for private use** typically stored on smartphones and tablets that reveal personal information about an individual's daily habits and social interactions.
 - Transferred video viewing habit information - information revealing the extent or content of any individual's access, viewing or other use of any video programming, including by a provider of broadcast television service, cable service, satellite service or streaming media service, but only concerning the transfer of such information to a third party and excluding any such data used solely for transfers for independent video measurement.
 
-### What Data Isn’t Protected?
+### What Data Isn’t Protected
 
 The distinction between personal and nonpersonal information hinges on identifiability, meaning that personal data is identifiable and thus protected by most privacy laws when it can be reasonably linked to a particular person (or even computer or device).
 This boundary can be ambiguous, with varying interpretations across jurisdictions.
-For instance, IP addresses are considered personal information by the EU and FTC, but not by U.S. federal agencies under the Privacy Act.¶ Moreover, sometimes, deidentified data can be reidentified, introducing challenges to personal data protection.
+For instance, IP addresses are considered personal information by the EU and FTC, but not by U.S. federal agencies under the Privacy Act. Moreover, sometimes, deidentified data can be reidentified, introducing challenges to personal data protection.
 When identifying elements are removed from data, it becomes nonpersonal information, generally falling outside the scope of privacy and data protection laws.
 
 Some methods of transforming identifiable data into nonpersonal data are deidentification, anonymization, and aggregation.
@@ -246,13 +247,13 @@ Noise addition is the primary mechanism of differential privacy – a mathematic
 This ensures that the inclusion or exclusion of any single individual's data does not significantly affect the outcome of the analysis and adds a level of personal data protection.
 Sometimes it is possible to reidentify the deidentified data using other available information.
 In this context, although it is often used interchangeably with the term “deidentification,” the term “anonymization” refers to the more comprehensive irreversible removal of identifiable data.
-Rigorous deidentification or anonymization techniques should be employed to ensure that reidentification is either impossible or extremely difficult.¶
+Rigorous deidentification or anonymization techniques should be employed to ensure that reidentification is either impossible or extremely difficult.
 
 ### Aggregation/Anonymization
 
 In the data privacy context, data aggregation is a data analytics process whereby combined data from multiple sources or individuals containing PII information is summarized, effectively removing PII from the final product.
 It can be used to protect individuals' personal information while still allowing organizations to derive valuable insights.
-While aggregation can obscure individual identities, there are still privacy concerns that should be considered:¶
+While aggregation can obscure individual identities, there are still privacy concerns that should be considered:
 
 1. **Re-identification risk**: With enough granular data points, it may be possible to single out individuals even from aggregated datasets. Applying multiple specific filters to aggregate data could potentially identify a unique individual.
 1. **Inference attacks**: Aggregated data can reveal patterns that allow inferences about individuals or small groups, even if direct identifiers are removed.
@@ -295,7 +296,7 @@ The type of consent required (explicit or implied) may vary, but it has to be ob
 1. **Exceptions for Law Enforcement:** Most laws include provisions allowing for authorized interception of communications by law enforcement agencies, typically requiring judicial oversight through warrants or court orders.
 1. **Technology-Specific Provisions**: As technology evolves, laws may include specific provisions for different communication media, such as landlines, mobile phones, emails, instant messaging, video calls, and Internet browsing activities.
 1. **Security Measures:** Requirements for securing stored communications against unauthorized access, including encryption standards and access controls, are increasingly common.
-Moreover, using encryption may in some cases absolve the data processor from legal liability or at least mitigate it.¶
+Moreover, using encryption may in some cases absolve the data processor from legal liability or at least mitigate it.
 
 Understanding these common provisions is crucial for compliance with communications privacy laws, regardless of the specific jurisdiction.
 However, it is important to note that the exact implementation and interpretation of these provisions can vary significantly between different legal frameworks.
@@ -321,7 +322,7 @@ Organizations should establish retention policies and securely dispose of data t
 This may include encryption, access controls, and regular security assessments.
 1. **Individual Rights**: Individuals have certain rights regarding their personal data, including the right to access their data, the right to request corrections or deletions (”the right to be forgotten”), the right to object to certain uses of their data, and the right to data portability (the ability to transfer their data from one organization to another).
 1. **Data Integrity**: Personal data should be accurate, complete, up-to-date, and trustworthy throughout its lifecycle.
-The core principles of data integrity include consistency across systems, authenticity verification, and non-repudiation mechanisms.¶
+The core principles of data integrity include consistency across systems, authenticity verification, and non-repudiation mechanisms.
 1. **Accountability**: Organizations are responsible for complying with data privacy laws and demonstrating compliance.
 This may involve conducting privacy impact assessments, appointing a data protection officer, and maintaining records of data processing activities.
 1. **Recordkeeping**: Maintain accurate logs of consumers' profiles, data decisions, and data usage, including sales and marketing campaigns and instances of data disclosure to third parties.
