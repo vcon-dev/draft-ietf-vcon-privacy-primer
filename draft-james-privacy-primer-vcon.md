@@ -294,7 +294,7 @@ The type of consent required (explicit or implied) may vary, but it has to be ob
 1. **Purpose Limitations:** Regulations frequently specify permissible purposes for recording or intercepting communications, such as for security, quality assurance, or with court authorization for law enforcement activities.
 1. **Storage and Retention Limitations**: Rules governing how long recorded communications can be stored, how they must be protected, and when they should be destroyed are common features of privacy laws.
 1. **Exceptions for Law Enforcement:** Most laws include provisions allowing for authorized interception of communications by law enforcement agencies, typically requiring judicial oversight through warrants or court orders.
-1. **Technology-Specific Provisions**: As technology evolves, laws may include specific provisions for different communication media, such as landlines, mobile phones, emails, instant messaging, video calls, and Internet browsing activities.
+1. **Technology-Specific Provisions**: As technology evolves, laws may include specific provisions for different communication media, such as landlines, mobile phones, emails, instant messaging, video calls, and internet browsing activities.
 1. **Security Measures:** Requirements for securing stored communications against unauthorized access, including encryption standards and access controls, are increasingly common.
 Moreover, using encryption may in some cases absolve the data processor from legal liability or at least mitigate it.
 
@@ -305,6 +305,7 @@ However, it is important to note that the exact implementation and interpretatio
 
 Data privacy and communications privacy are guided by similar principles, emphasizing consent, transparency, and data minimization while balancing privacy rights with societal interests.
 These areas aim to safeguard individuals' control over their personal information, whether stored or transmitted.
+
 Key principles include:
 
 1. **Consent**:   Must be freely given, specific, informed, unambiguous, revocable, and documented.
@@ -346,8 +347,8 @@ The following points outline the key security considerations for vCons:
 
    - vCons often contain personally identifiable information (PII) and sensitive data that must be safeguarded.
    - Different levels of redaction may be necessary, as outlined in Section 4.1.6 (redacted):
-     a) PII masking: Removing PII from text, audio, video, and transcripts
-     b) De-identification: Removing segments or whole recordings to prevent voice printing or facial recognition
+     - PII masking: Removing PII from text, audio, video, and transcripts.
+     - De-identification: Removing segments or whole recordings to prevent voice printing or facial recognition.
 
 1. Encrypted Storage and Transmission
    - Unredacted versions of vCons must be encrypted to protect sensitive information, as described in Section 5.3 (Encrypted Form of vCon Object).
