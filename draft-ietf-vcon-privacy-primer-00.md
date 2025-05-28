@@ -3,7 +3,7 @@ title: "Privacy Primer for vCon Developers"
 abbrev: "vcon primer"
 category: info
 
-docname: draft-james-privacy-primer-vcon-01
+docname: draft-ietf-vcon-privacy-primer-00
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -16,10 +16,10 @@ keyword:
  - privacy
  - sparkling distributed ledger
 venue:
-#  group: WG
-#  type: Working Group
-#  mail: WG@example.com
-#  arch: https://example.com/WG
+  group: vcon
+  type: Working Group
+  mail: vcon@ietf.org
+  arch: ""
   github: "howethomas/privacy-primer-vcon"
   latest: "https://howethomas.github.io/privacy-primer-vcon/draft-james-privacy-primer-vcon.html"
 
