@@ -1,9 +1,9 @@
 ---
 title: "Privacy Primer for vCon Developers"
-abbrev: "vcon primer"
+abbrev: "privacy primer"
 category: info
 
-docname: draft-ietf-vcon-privacy-primer-00
+docname: draft-ietf-vcon-privacy-primer-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
@@ -16,12 +16,12 @@ keyword:
  - privacy
  - sparkling distributed ledger
 venue:
-  group: vcon
-  type: Working Group
-  mail: vcon@ietf.org
-  arch: ""
-  github: "howethomas/privacy-primer-vcon"
-  latest: "https://howethomas.github.io/privacy-primer-vcon/draft-james-privacy-primer-vcon.html"
+  group: "Virtualized Conversations"
+  type: "Working Group"
+  mail: "vcon@ietf.org"
+  arch: "https://mailarchive.ietf.org/arch/browse/vcon/"
+  github: "ietf-wg-vcon/draft-ietf-vcon-privacy-primer"
+  latest: "https://ietf-wg-vcon.github.io/draft-ietf-vcon-privacy-primer/draft-ietf-vcon-privacy-primer.html"
 
 author:
  -
@@ -51,11 +51,11 @@ informative:
    RFC8446:
 
 --- abstract
-This document serves as a primer for technical professionals involved in managing personal data, including biometric information from audio and video recordings, and other sensitive information in messaging or personal communications.
-It outlines key concepts in data privacy and communications privacy, addressing the ethical and legal considerations surrounding the collection, processing, and disclosure of consumer data.
-The document covers fundamental privacy principles, defines important roles in data processing, and explains consumer rights regarding their personal information.
+This document serves as a primer for technical professionals involved in the processing (which includes collecting, using, disclosure, and erasure) of personal data, including not only basic identifiers like name, age, and address, but also sensitive data contained in communications, including biometrics obtained from audio and video recordings.
+It outlines key concepts in data privacy and communications privacy, addressing the ethical and legal considerations surrounding the collection, processing, sharing, access, retention, and disclosure of individuals’ data.
+The document covers fundamental privacy principles, defines important roles in data processing, and explains individuals’ rights regarding their personal information.
 It also discusses the scope of protected personal information, including sensitive data categories, and explores techniques like data aggregation and anonymization.
-While referencing existing IETF work on privacy in Internet communications, this draft extends beyond to address consumer data privacy in relation to organizations handling such data.
+While referencing existing IETF work on privacy in Internet communications, this draft extends beyond to address individuals' data privacy in relation to organizations handling such data.
 The goal is to provide a comprehensive overview of privacy considerations, aligning with fair information practices and current regulatory frameworks, to guide professionals in implementing privacy-respecting data management practices.
 
 --- middle
@@ -64,9 +64,9 @@ The goal is to provide a comprehensive overview of privacy considerations, align
 
 The democratization of technology has led to a surge of new entrants in the growing market of personal data management.
 These entrants, driven by various motives ranging from commerce and regulation to fraud prevention and charitable causes, are increasingly engaging with conversational data across network boundaries.
-The vCon (Virtual Conversation) represents a significant step forward in this landscape, enabling the ethical sharing of conversational data and fostering a rich ecosystem of services based on a novel concept: genuinely listening to what customers say.
+The vCon (Virtual Conversation) represents a significant step forward in this landscape, enabling the processing and ethical sharing of conversational data and fostering a rich ecosystem of services based on a novel concept: genuinely listening to what customers say.
 
-However, many of these new entrants may not inherently understand the ethical and legal complexities surrounding crucial topics such as data minimization, redaction, the right to know, and the right to erasure.
+However, many of these new entrants may not inherently understand the ethical and legal complexities surrounding crucial topics such as data minimization, legal basis for processing, redaction, the right to know, and the right to erasure.
 The design decisions behind the vCon framework directly address these concerns, incorporating features such as encryption capabilities, external data signing for change detection, and the creation of redacted versions that maintain a trail to the original data.
 
 ## Purpose of this Document
@@ -76,7 +76,7 @@ It aims to provide a foundational understanding of key topics, explaining their 
 While the vCon is not a panacea, it offers a structure that enables well-intentioned actors to operate ethically and responsibly.
 Much like the distinction between HTTP and HTTPS, where HTTPS is trusted by default and HTTP is not, the vCon framework provides a basis for trust, with legal systems managing those who operate outside its principles.
 IETF standards already address privacy in Internet communications, including the principle of data minimization {{RFC7258}}.
-However, those standards generally do not address the privacy of consumer data privacy vis-à-vis organizations that collect, process, and disclose consumer data.
+However, those standards generally do not address the privacy of individuals' data privacy vis-à-vis organizations that collect, process, and disclose their data.
 
 ## Intended Audience
 
@@ -108,7 +108,7 @@ By achieving these goals, we aim to contribute to a more informed and responsibl
 
 ## Privacy and vCon – In General
 
-Privacy in general can be understood as "the right to be let alone" [Warren, S. D., & Brandeis, L. D. (1890). The Right to Privacy. Harvard Law Review, 4(5), 193-220]. It may be helpful to think of it in four aspects:
+Privacy in general can be understood as "the right to be let alone" [Warren1890]. It may be helpful to think of it in four aspects:
 
 1. personal information (or data) privacy,
 1. bodily privacy,
@@ -122,44 +122,44 @@ In the context of vCon, we will concentrate on **data privacy** and **communicat
 Data privacy, also known as information privacy or data protection, refers to the practice of safeguarding individuals' personal information from unauthorized access, use, disclosure, alteration, or destruction.
 It involves ensuring that individuals have control over their own personal data and that organizations that collect, store, and process personal data do so in a manner that respects individuals' privacy rights.
 
-Data privacy laws and regulations vary by jurisdiction, but many countries and regions have enacted legislation to protect individuals' personal data.
-Examples of data privacy laws include the General Data Protection Regulation (GDPR) in the European Union, the California Consumer Privacy Act (CCPA) in the United States, and the Personal Data Protection Act (PDPA) in Singapore.
-The U.S. data privacy legal landscape is a particularly complex patchwork of federal and state laws.
-It includes comprehensive state-level consumer privacy acts, industry-specific federal laws, and intricate pre-emption relationships between them, creating a fragmented and multifaceted regulatory environment.
+Many countries and regions have enacted legislation to protect individuals' personal data, but their specific rules vary by jurisdiction.
+Examples of data privacy laws include the General Data Protection Regulation (GDPR) in the European Union, the Health Insurance Portability and Accountability Act (HIPAA) and California Consumer Privacy Act (CCPA) in the United States, and the Personal Data Protection Act (PDPA) in Singapore.
+The U.S. data privacy legal landscape is a particularly complex patchwork of federal and state laws. It includes comprehensive state-level data privacy acts, industry-specific federal laws, and intricate pre-emption relationships between them, creating a fragmented and multifaceted regulatory environment.
 
-This document outlines common privacy rights and obligations as of the time of this writing (September, 2024) in alignment with fair information practices (FIP), which are widely recognized principles but may or may not be legally required, depending on the jurisdiction.
+This document outlines common privacy rights and obligations as of the time of this writing in alignment with fair information practices (FIP), which are widely recognized principles but may or may not be legally required, depending on the jurisdiction.
 The framework presented here offers a general understanding of data privacy principles but does not guarantee legal compliance in any specific region.
-Readers are encouraged to seek legal advice for their particular situations.
+Readers are encouraged to seek legal or technical advice for their particular jurisdiction, industry(-ies), and situations.
 
 ### Key Roles in Data Processing
 
 The following terms are used by the GDPR and in the privacy industry in general to define the three key roles in data processing:
 
-1. **Data Subject**: The individual whose personal information is being processed (also referred to as "consumer" in this RFC and many personal data privacy laws).
-2. **Data Controller**: An organization or individual with decision-making authority over data processing who determines the purposes and methods of data processing, bears primary responsibility under privacy laws and is the main target of most privacy and data protection regulations.
+1. **Data Subject**: The individual whose personal information is being processed (also referred to as “individual" in this RFC and "consumer" in some data privacy laws).
+2. **Data Controller**: An organization or individual with decision-making authority over data processing who has the legal basis to process data and determines the purposes and methods of data processing, bears primary responsibility under privacy laws and is the main target of most privacy and data protection regulations.
 3. **Data Processor**: Often a third-party service provider who processes data on behalf of the data controller. Under HIPAA, data processors are referred to as "business associates." Data processors may be hired for specialized tasks or to improve efficiency; can subcontract to other processors, creating a chain of responsibility; must operate within the scope defined by the data controller; and are expected to maintain trust and adhere to the controller's guidelines.
 
 The relationship between these entities forms a hierarchy of responsibility and trust.
 The data controller sets the parameters for data use, while processors at various levels must operate within these boundaries.
 This structure ensures accountability and helps maintain data privacy throughout the information processing chain.
 
-### What Rights in Their Data do Consumers Have?
+### What Data Rights do Data Subjects Have?
 
 Regarding individual rights in data privacy, organizations should focus on six key areas:
 
-1. **Notice of Data Processing**: Organizations must clearly communicate their privacy policies and practices. This includes explaining what personal data is collected and for which purposes, how it is used, stored, and shared, and how consumers can exercise their data privacy rights. This ensures transparency, holds data controllers accountable, and empowers individuals to make informed choices about their personal information.
+1. **Notice of Data Processing**: Organizations must clearly communicate their privacy policies and practices. This includes explaining what personal data is collected and for which purposes, how it is used, stored, and shared, and how individuals can exercise their data privacy rights. This ensures transparency, holds data controllers accountable, and empowers individuals to make informed choices about their personal information.
 2. **Consent**: Organizations need to obtain data subjects' informed and freely given consent for collecting, using, storing, and sharing personal data. Different levels of consent consent may apply to different kinds of data or in different jurisdictions:
     - Consent can be affirmative ("opt-in" consent) or presumed unless stated otherwise ("opt-out" consent). Opt-in consent is usually required for sensitive data and children's data (under 13 or 16 years old).
     - Consent can be written, oral, or implied.
     - In some jurisdictions, such as California, consent must be sought at or before the point of data collection.
-3. **Access**: Organizations should offer mechanisms for consumers to access and correct their personal data. This empowers people to ensure their data is accurate and up-to-date.
+It should also be noted that consent can be layered (i.e. provided for one function but not others) and revoked at any time by the data subject, and data controllers/processors need to act on this expediently. Consent Management is therefore a key requirement when handling personal data.
+3. **Access**: Organizations should offer mechanisms for individuals to access and correct their personal data. This empowers people to ensure their data is accurate and up-to-date.
 4. **Data Choices**: In addition to rights to access and correct, data subjects often have the following data privacy rights:
     - right to have their information deleted (also referred to as the "right to be forgotten");
-    - right to port their data to a different data controller;
+    - right to download their data in a readily readable format and provide their data to a different data controller;
     - right to opt out of certain data practices, such as sale of their data, profiling, targeted/cross contextual behavioral advertising, automated decision-making.
-1. **Non-Discrimination**: Organizations must not discriminate against consumers who choose to exercise their data privacy rights.
-1. **Breach Notification**: The large amounts of data held by organizations attracts cyber criminals, increases the risk of data breaches.
-To mitigate the consequences of data breaches and incentivize advanced data security practices, most jurisdictions require prompt notification of affected individuals when breaches occur (within 30 days of discovery being the industry practice in the U.S.).
+1. **Non-Discrimination**: Organizations must not discriminate against individuals who choose to exercise their data privacy rights.
+1. **Breach Notification**: The large amounts of data held by organizations attract cyber criminals, increases the risk of data breaches.
+To mitigate the consequences of data breaches and incentivize advanced data security practices, most jurisdictions require reasonable security safeguards and prompt notification of affected individuals when breaches occur. Many regulatory bodies require notification from a data controller within 30 days of discovery. Controllers are also required to take prompt incident response measures to mitigate breaches and promptly inform and assist data subjects with breach mitigation.
 This holds organizations accountable for data security and allows individuals to take protective actions.
 
 By addressing these areas, organizations can respect individual privacy rights and build trust with their customers or users.
@@ -167,12 +167,15 @@ This approach aligns with many modern data protection regulations and best pract
 
 ### What Data Is Protected?
 
-Data privacy laws protect personal information, though its scope can vary across different laws. In general, the term "personal information" (also known as "personally identifiable information" or "PII") includes information that makes it possible to identify an individual or information about an "identified" or "identifiable" individual. California extends the scope of PII to include information about a consumer and the consumer's household, as well as employment data. Examples of PII include:
+Data privacy laws protect personal information, though its scope can vary across different laws. In general, the term "personal information" (also known as "personally identifiable information" or "PII") includes information that makes it possible to identify an individual or information about an "identified" or "identifiable" individual. Privacy laws may further extend the scope of PII: for example, the California Privacy Rights Act's definition of PII includes information about an individual and the individual's household, as well as employment data.
+
+In general, examples of PII include:
 
 - Basic identifiers: Name, addresses (postal and email), government-issued identification numbers
 - Digital identifiers: IP address (in some jurisdictions like California).
 - Financial Data: financial account number or credit or debit card number, often in combination with any required security code or password that would permit access to a data subject’s financial account.
-- Protected characteristics: Race, religion, disability, sexual orientation, national origin, etc.
+- Health data, including mental health or substance abuse information. Many healthcare identifiers are similar to other types of personal data (like names and addresses), but others may refer to specialized information like health insurance details and medical codes.
+- Characteristics protected under various civil rights and non-discrimination laws: Race, religion, disability, sexual orientation, national origin, etc.
 - Consumer behavior: Purchase history, product interests, consumption patterns.
 - Biometric data, including voiceprints, faceprints, fingerprints.
 - Online activity: Browsing and search history, website and app interaction.
@@ -182,36 +185,31 @@ Data privacy laws protect personal information, though its scope can vary across
 
 ### Sensitive Data
 
-An important subset of PII to consider in designing data privacy practices is so-called "sensitive data" which is subject to a higher standard of protection and requires additional privacy and security limitations to safeguard its collection, use and disclosure. For example, it may require an opt-in consent for data collection and processing. In various jurisdictions sensitive information may include the following:
+An important subset of PII to consider in designing data privacy practices is so-called "sensitive data" which is subject to a higher standard of protection and requires additional privacy and security limitations to safeguard its collection, use, and disclosure. For example, it may require an opt-in consent for data collection and processing. In various jurisdictions sensitive information may include the following:
 
 - Government-issued identifiers.
 - Physical or mental health information.
 - Genetic data.
 - Financial data.
 - Biometric information.
-- Precise geolocation data (information on a customer’s location within a 1,850-foot radius around the consumer).
-- Certain communications data – an individual's private communications, such as voicemails, emails, texts, direct messages or mail, or information identifying the parties to such communications, information contained in telephone bills, voice communications, and any information that pertains to the transmission of voice communications, including numbers called, numbers from which calls were placed, the time calls were made, call duration and location information of the parties to the call, unless the covered entity is an intended recipient of the communication. Communications with businesses may be awarded less protection.
+- Precise geolocation data (information on an individual’s location within a 1,850-foot radius).
 - Log-in credentials – a customer’s account log-in, password, or credentials allowing access to an account.
 - Citizenship and immigration status.
 - Sexual behavior.
 - Information revealing an individual's online activities over time and across websites or online services that do not share common branding or over time on any website or online service operated by a covered high-impact social media company.
-- Information about minors (17 years of age or younger).
-- Certain communications data – an individual's private communications, such as voicemails, emails, texts, direct messages or mail, or information identifying the parties to such communications, information contained in telephone bills, voice communications, and any information that pertains to the transmission of voice communications, including numbers called, numbers from which calls were placed, the time calls were made, call duration and location information of the parties to the call, unless the covered entity is an intended recipient of the communication.
-Communications with businesses may be awarded less protection.
-- Online activity - information revealing an individual's online activities over time and across websites or online services that do not share common branding or over time on any website or online service operated by a covered high-impact social media company.
-- Calendars, address book information, phone or text logs, photos, audio recordings, or videos intended for private use** typically stored on smartphones and tablets that reveal personal information about an individual's daily habits and social interactions.
-- Transferred video viewing habit information - information revealing the extent or content of any individual's access, viewing or other use of any video programming, including by a provider of broadcast television service, cable service, satellite service or streaming media service, but only concerning the transfer of such information to a third party and excluding any such data used solely for transfers for independent video measurement.
+- Information about minors (17 years of age or younger, depending on the applicable law).
+- Certain communications data – an individual's private communications, such as voicemails, emails, texts, direct messages or mail, or information identifying the parties to such communications, information contained in telephone bills, voice communications, and any information that pertains to the transmission of voice communications, including numbers called, numbers from which calls were placed, the time calls were made, call duration and location information of the parties to the call, unless the covered entity is an intended recipient of the communication. Communications with businesses may be awarded less protection.
 
-### What Data Isn't Protected?
+### What Data Is Not Protected?
 
 The distinction between personal and nonpersonal information hinges on identifiability, meaning that personal data is identifiable and thus protected by most privacy laws when it can be reasonably linked to a particular person (or even computer or device).
-This boundary can be ambiguous, with varying interpretations across jurisdictions.
+This boundary has varying interpretations across jurisdictions.
 For instance, IP addresses are considered personal information by the EU and FTC, but not by U.S. federal agencies under the Privacy Act. Moreover, sometimes, deidentified data can be reidentified, introducing challenges to personal data protection.
 When identifying elements are removed from data, it becomes nonpersonal information, generally falling outside the scope of privacy and data protection laws.
 
 Some methods of transforming identifiable data into nonpersonal data are deidentification, anonymization, and aggregation.
 On the other hand, pseudonymization (replacing identifiable data with pseudonyms/unique codes) only temporarily removes identifiable data with the possibility of relatively easy reidentification.
-In many jurisdictions pseudonymous data falls within the scope of personal data when used in conjunction with additional information that reasonably links the data to an identified or identifiable individual.
+In many jurisdictions, pseudonymous data falls within the scope of personal data when used in conjunction with additional information that reasonably links the data to an identified or identifiable individual.
 
 Many jurisdictions remove **publicly available information** from the scope of protected PI.
 
@@ -229,7 +227,7 @@ Noise addition is the primary mechanism of differential privacy – a mathematic
 This ensures that the inclusion or exclusion of any single individual's data does not significantly affect the outcome of the analysis and adds a level of personal data protection.
 Sometimes it is possible to reidentify the deidentified data using other available information.
 In this context, although it is often used interchangeably with the term “deidentification,” the term “anonymization” refers to the more comprehensive irreversible removal of identifiable data.
-Rigorous deidentification or anonymization techniques should be employed to ensure that reidentification is either impossible or extremely difficult.
+Rigorous deidentification or anonymization techniques are highly recommended to ensure that reidentification is either impossible or extremely difficult.
 
 ### Aggregation/Anonymization
 
@@ -261,7 +259,7 @@ Organizations must remain vigilant and adopt a comprehensive approach to data pr
 ## Communications Privacy
 
 Communications privacy is a critical concern in our increasingly interconnected world, where various forms of communication – including audio, video, text messages, and emails – have become integral to both personal and professional interactions.
-Under the applicable laws, communications are protected when in transit and when stored.
+Under the applicable laws, communications are protected when in transit and at rest.
 
 Understanding the multifaceted legal and ethical frameworks around communications privacy is essential for anyone involved in capturing, storing, analyzing, or managing communications data.
 Communications privacy laws across various jurisdictions often share common elements, designed to protect individuals' privacy rights while balancing the needs of law enforcement and legitimate business interests.
@@ -283,16 +281,15 @@ Moreover, using encryption may in some cases absolve the data processor from leg
 Understanding these common provisions is crucial for compliance with communications privacy laws, regardless of the specific jurisdiction.
 However, it is important to note that the exact implementation and interpretation of these provisions can vary significantly between different legal frameworks.
 
-### Key Privacy Principles
+## Key Privacy Principles
 
 Data privacy and communications privacy are guided by similar principles, emphasizing consent, transparency, and data minimization while balancing privacy rights with societal interests.
 These areas aim to safeguard individuals' control over their personal information, whether stored or transmitted.
 
 Key principles include:
 
-1. **Consent**:   Must be freely given, specific, informed, unambiguous, revocable, and documented.
-Consent may not be valid in situations with power imbalances or required when processing is necessary to satisfy legal obligations or implement contracts.
-So-called "dark patterns," which are practices of seeking consent that effectively obscure, subvert, or impair the consumer's autonomy, decision-making or choice (for example, confusing user interfaces or hidden disclosures) are prohibited in many jurisdictions.
+1. **Consent**:   Organizations must usually seek individuals' consent for collecting, processing, and using their sensitive data (as defined under applicable laws) or recording private communications. When required, consent must be freely given, specific, informed, unambiguous, revocable, and documented. Consent may not be valid in situations with power imbalances and may not be required when PII processing is necessary to satisfy legal obligations or implement contracts.
+Many jurisdictions prohibit so-called "dark patterns," which are practices of seeking consent that effectively obscure, subvert, or impair the individuals' autonomy, decision-making or choice (for example, confusing user interfaces or hidden disclosures).
 1. **Notice/Transparency**: Organizations must clearly disclose their data handling practices.
 Privacy notices should be concise, transparent, and easily understandable.
 Changes to privacy practices must be promptly communicated.
@@ -306,18 +303,36 @@ This may include encryption, access controls, and regular security assessments.
 1. **Individual Rights**: Individuals have certain rights regarding their personal data, including the right to access their data, the right to request corrections or deletions ("the right to be forgotten"), the right to object to certain uses of their data, and the right to data portability (the ability to transfer their data from one organization to another).
 1. **Data Integrity**: Personal data should be accurate, complete, up-to-date, and trustworthy throughout its lifecycle.
 The core principles of data integrity include consistency across systems, authenticity verification, and non-repudiation mechanisms.
-1. **Accountability**: Organizations are responsible for complying with data privacy laws and demonstrating compliance.
+1. **Accountability**: Organizations are responsible for complying with data privacy laws and demonstrating compliance. Organizations are also accountable for any downstream entities with which they may share personal data for a specific defined purpose. Companies must also ensure they monitor and periodically audit third parties with which they share personal data.
 This may involve conducting privacy impact assessments, appointing a data protection officer, and maintaining records of data processing activities.
-1. **Recordkeeping**: Maintain accurate logs of consumers' profiles, data decisions, and data usage, including sales and marketing campaigns and instances of data disclosure to third parties.
+1. **Recordkeeping**: Many laws require organizations to maintain accurate logs of consumers' profiles, data decisions, and data usage, including sales and marketing campaigns and instances of data disclosure to third parties.
 
 While data privacy and communications privacy share many principles, there are some distinctions in their regulation.
 Communications privacy laws often focus more on real-time interception and communication confidentiality, while data privacy laws address a broader range of data handling practices.
 
 As the digital landscape evolves, privacy laws must continually adapt to address emerging technologies and practices, ensuring the protection of personal information in our interconnected world.
 
+## Artificial Intelligence-Specific Considerations
+
+As vCons are likely to be used in the context of artificial intelligence (AI) applications and services, either directly or tangentially, additional considerations are necessary due to the nascent regulatory environment regarding AI.
+
+One of the most advanced regulations around AI is currently the EU AI Act. In the U.S., the Colorado AI Act contains similar principles. Various organizations, such as the National Institute of Standards and Technology (NIST), have also adopted guidance related to mitigating risks associated with AI use.
+
+The EU AI Act provides a comprehensive legal framework for the development, marketing, and use of AI in the EU to promote human-centric and trustworthy uses of AI while ensuring a high level of protection of health, safety and fundamental rights. The legislation adopts a risk-based approach, distinguishing between tiers of AI use cases: prohibited (such as behavioral manipulation and sensitive biometrics), high-risk (including critical infrastructure and medical devices), limited risk, and minimal risk, with each tier subject to regulatory requirements that scale from the strictest to the lightest, accordingly.
+
+For example, key requirements for High-Risk AI use cases under the EU AI Act include:
+ - stringent impact and conformity assessments and registration
+ - risk and quality management
+ - human oversight
+ - strong data governance practices to not only mitigate bias but also ensure adequate controls of representative data used in training as well as production applications
+ - transparency through technical documentation and instructions
+ - privacy and data governance
+
+As such, all of the previously discussed privacy and security measures apply to AI use cases under the EU AI Act and are supplemented with additional requirements. In particular, there is an increased emphasis on robust controls over data used for model testing and training, as well as the implementation of processes to ensure effective human oversight, including ongoing monitoring and auditing.
+
 # Security Considerations
 
-vCons contain sensitive conversational data, which raises several data privacy and security concerns, particularly regarding data integrity and personal privacy.
+vCons can contain sensitive personal and conversational data, which raises several data privacy and security concerns, particularly regarding data integrity and personal privacy.
 The following points outline the key security considerations for vCons:
 
 1. Data Integrity and Immutability
@@ -353,7 +368,7 @@ The following points outline the key security considerations for vCons:
    - Implementers must ensure that redaction methods effectively remove sensitive information without compromising the vCon's integrity.
 
 1. Balancing Utility and Privacy
-   - There's an inherent tension between maintaining the usefulness of vCons and protecting privacy, as implied throughout Section 4 (Unsigned Form of vCon Object).
+   - There is an inherent tension between maintaining the usefulness of vCons and protecting privacy, as implied throughout Section 4 (Unsigned Form of vCon Object).
    - Careful consideration is needed when deciding what information to redact or encrypt.
 
 1. Encryption of Referenced Content
@@ -369,7 +384,7 @@ By addressing these security concerns and following the guidelines in the vCon s
 
 This document has no IANA actions.
 
-[Warren1890] Warren, S. D., & Brandeis, L. D., "The Right to Privacy", Harvard Law Review, 4(5), 193-220, 1890.
+[Warren1890] Warren, S.D. and Brandeis, L.D., "The Right to Privacy", Harvard Law Review, Vol. 4, No. 5, pp. 193-220, December 1890.
 --- back
 
 # Acknowledgments

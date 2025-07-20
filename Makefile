@@ -10,4 +10,4 @@ else
 	    -b main https://github.com/martinthomson/i-d-template $(LIBDIR)
 endif
 
-DRAFT := draft-james-privacy-primer-vcon-01
+DRAFT := draft-ietf-vcon-privacy-primer
