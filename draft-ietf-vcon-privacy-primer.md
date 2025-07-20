@@ -390,4 +390,4 @@ This document has no IANA actions.
 # Acknowledgments
 {:numbered="false"}
 
-TODO acknowledge.
+- Thank you to Andy Newton for his review, suggestions and improvements
