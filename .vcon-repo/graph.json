@@ -1,0 +1,398 @@
+{
+  "schema_version": "1.0.0",
+  "repo": "draft-ietf-vcon-privacy-primer",
+  "repo_version": null,
+  "archetype": "ietf-draft",
+  "generated_at": "2026-04-16T15:15:44.324420+00:00",
+  "stats": {
+    "node_count": 38,
+    "edge_count": 22
+  },
+  "nodes": [
+    {
+      "id": "document:draft",
+      "type": "document",
+      "name": "draft-ietf-vcon-privacy-primer",
+      "file": "draft-ietf-vcon-privacy-primer.md"
+    },
+    {
+      "id": "section:area-area",
+      "type": "section",
+      "name": "area: AREA",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 12,
+      "level": 1
+    },
+    {
+      "id": "section:workgroup-art-working-group",
+      "type": "section",
+      "name": "workgroup: ART Working Group",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 13,
+      "level": 1
+    },
+    {
+      "id": "section:introduction",
+      "type": "section",
+      "name": "Introduction",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 63,
+      "level": 1
+    },
+    {
+      "id": "section:purpose-of-this-document",
+      "type": "section",
+      "name": "Purpose of this Document",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 72,
+      "level": 2
+    },
+    {
+      "id": "section:intended-audience",
+      "type": "section",
+      "name": "Intended Audience",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 81,
+      "level": 2
+    },
+    {
+      "id": "section:goals-of-this-document",
+      "type": "section",
+      "name": "Goals of this Document",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 94,
+      "level": 2
+    },
+    {
+      "id": "section:conventions-and-definitions",
+      "type": "section",
+      "name": "Conventions and Definitions",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 105,
+      "level": 1
+    },
+    {
+      "id": "section:privacy-and-vcon-in-general",
+      "type": "section",
+      "name": "Privacy and vCon \u2013 In General",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 109,
+      "level": 2
+    },
+    {
+      "id": "section:data-privacy",
+      "type": "section",
+      "name": "Data privacy",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 120,
+      "level": 2
+    },
+    {
+      "id": "section:key-roles-in-data-processing",
+      "type": "section",
+      "name": "Key Roles in Data Processing",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 133,
+      "level": 3
+    },
+    {
+      "id": "section:what-data-rights-do-data-subjects-have",
+      "type": "section",
+      "name": "What Data Rights do Data Subjects Have?",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 145,
+      "level": 3
+    },
+    {
+      "id": "section:what-data-is-protected",
+      "type": "section",
+      "name": "What Data Is Protected?",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 168,
+      "level": 3
+    },
+    {
+      "id": "section:sensitive-data",
+      "type": "section",
+      "name": "Sensitive Data",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 186,
+      "level": 3
+    },
+    {
+      "id": "section:what-data-is-not-protected",
+      "type": "section",
+      "name": "What Data Is Not Protected?",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 203,
+      "level": 3
+    },
+    {
+      "id": "section:deidentification-anonymization",
+      "type": "section",
+      "name": "Deidentification/Anonymization",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 222,
+      "level": 3
+    },
+    {
+      "id": "section:aggregation-anonymization",
+      "type": "section",
+      "name": "Aggregation/Anonymization",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 232,
+      "level": 3
+    },
+    {
+      "id": "section:communications-privacy",
+      "type": "section",
+      "name": "Communications Privacy",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 259,
+      "level": 2
+    },
+    {
+      "id": "section:key-privacy-principles",
+      "type": "section",
+      "name": "Key Privacy Principles",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 284,
+      "level": 2
+    },
+    {
+      "id": "section:artificial-intelligence-specific-considerations",
+      "type": "section",
+      "name": "Artificial Intelligence-Specific Considerations",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 315,
+      "level": 2
+    },
+    {
+      "id": "section:security-considerations",
+      "type": "section",
+      "name": "Security Considerations",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 333,
+      "level": 1
+    },
+    {
+      "id": "section:iana-considerations",
+      "type": "section",
+      "name": "IANA Considerations",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 383,
+      "level": 1
+    },
+    {
+      "id": "section:acknowledgments",
+      "type": "section",
+      "name": "Acknowledgments",
+      "file": "draft-ietf-vcon-privacy-primer.md",
+      "line": 390,
+      "level": 1
+    },
+    {
+      "id": "reference:rfc3552",
+      "type": "reference",
+      "name": "RFC 3552",
+      "url": "https://www.rfc-editor.org/rfc/rfc3552"
+    },
+    {
+      "id": "reference:rfc6235",
+      "type": "reference",
+      "name": "RFC 6235",
+      "url": "https://www.rfc-editor.org/rfc/rfc6235"
+    },
+    {
+      "id": "reference:rfc6462",
+      "type": "reference",
+      "name": "RFC 6462",
+      "url": "https://www.rfc-editor.org/rfc/rfc6462"
+    },
+    {
+      "id": "reference:rfc6973",
+      "type": "reference",
+      "name": "RFC 6973",
+      "url": "https://www.rfc-editor.org/rfc/rfc6973"
+    },
+    {
+      "id": "reference:rfc7011",
+      "type": "reference",
+      "name": "RFC 7011",
+      "url": "https://www.rfc-editor.org/rfc/rfc7011"
+    },
+    {
+      "id": "reference:rfc7258",
+      "type": "reference",
+      "name": "RFC 7258",
+      "url": "https://www.rfc-editor.org/rfc/rfc7258"
+    },
+    {
+      "id": "reference:rfc7624",
+      "type": "reference",
+      "name": "RFC 7624",
+      "url": "https://www.rfc-editor.org/rfc/rfc7624"
+    },
+    {
+      "id": "reference:rfc7844",
+      "type": "reference",
+      "name": "RFC 7844",
+      "url": "https://www.rfc-editor.org/rfc/rfc7844"
+    },
+    {
+      "id": "reference:rfc7858",
+      "type": "reference",
+      "name": "RFC 7858",
+      "url": "https://www.rfc-editor.org/rfc/rfc7858"
+    },
+    {
+      "id": "reference:rfc8165",
+      "type": "reference",
+      "name": "RFC 8165",
+      "url": "https://www.rfc-editor.org/rfc/rfc8165"
+    },
+    {
+      "id": "reference:rfc8280",
+      "type": "reference",
+      "name": "RFC 8280",
+      "url": "https://www.rfc-editor.org/rfc/rfc8280"
+    },
+    {
+      "id": "reference:rfc8446",
+      "type": "reference",
+      "name": "RFC 8446",
+      "url": "https://www.rfc-editor.org/rfc/rfc8446"
+    },
+    {
+      "id": "document:LICENSE",
+      "type": "document",
+      "name": "LICENSE",
+      "file": "LICENSE.md"
+    },
+    {
+      "id": "document:CONTRIBUTING",
+      "type": "document",
+      "name": "CONTRIBUTING",
+      "file": "CONTRIBUTING.md"
+    },
+    {
+      "id": "document:readme",
+      "type": "document",
+      "name": "README",
+      "file": "README.md"
+    }
+  ],
+  "edges": [
+    {
+      "from": "document:draft",
+      "to": "section:area-area",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:workgroup-art-working-group",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:introduction",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:purpose-of-this-document",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:intended-audience",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:goals-of-this-document",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:conventions-and-definitions",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:privacy-and-vcon-in-general",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:data-privacy",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:key-roles-in-data-processing",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:what-data-rights-do-data-subjects-have",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:what-data-is-protected",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:sensitive-data",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:what-data-is-not-protected",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:deidentification-anonymization",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:aggregation-anonymization",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:communications-privacy",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:key-privacy-principles",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:artificial-intelligence-specific-considerations",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:security-considerations",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:iana-considerations",
+      "type": "contains"
+    },
+    {
+      "from": "document:draft",
+      "to": "section:acknowledgments",
+      "type": "contains"
+    }
+  ],
+  "subsystems": []
+}
