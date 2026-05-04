@@ -6,7 +6,7 @@ category: info
 docname: draft-ietf-vcon-privacy-primer-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
-date:
+date: 2026-05-04
 consensus: true
 v: 3
 # area: AREA
